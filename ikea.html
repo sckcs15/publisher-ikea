@@ -1,0 +1,863 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IKEA</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="images/logo.jpg">
+    <link rel="stylesheet" href="ikea.css">
+    <script src="https://kit.fontawesome.com/ef097ef005.js" crossorigin="anonymous"></script>
+    <script src="jquery-3.6.1.min.js"></script>
+    <script src="ikea.js"></script>
+</head>
+<body>
+   <header>
+        <ul class="head_top clearFix">
+            <li class="left logo"><img src="images/logo.png" alt="logo"></li>
+            <li class="left search clearFix">
+                <img src="images/search.png" alt="search">
+                <p>검색어 입력</p>
+                <img src="images/camera.png" alt="camera">
+            </li>
+            <li class="right cart"><img src="images/cart.png" alt="cart"></li>
+            <li class="right good"><img src="images/good.png" alt="good"></li>
+            <li class="right join"><p>로그인 ㆍ 가입하기</p></li>
+            <li class="right login"><img src="images/login.png" alt="login"></li>
+        </ul>
+   </header>
+   <section>
+    <div class="head_bottom">
+        <ul class="gnb">
+        <li><a href="#">제품</a>
+            <ul class="sub">
+                <li><a href="#">모든 제품</a></li>
+                <li><a href="#">온라인 쇼룸</a></li>
+                <li><a href="#">홈 액세서리</a></li>
+            </ul>
+        </li>
+        <li><a href="#">고객문의</a>
+            <ul class="sub">
+                <li><a href="#">고객지원</a></li>
+                <li><a href="#">자주묻는 질문</a></li>
+                <li><a href="#">문의하기</a></li>
+                <li><a href="#">배송조회</a></li>
+                <li><a href="#">교환환불</a></li>
+                <li><a href="#">품질보증</a></li>
+                <li><a href="#">제품리콜</a></li>
+                <li><a href="#">피드백</a></li>
+                <li><a href="#">부품신청</a></li>
+            </ul>
+        </li>
+        <li><a href="#">쇼핑하기</a>
+            <ul class="sub">
+                <li><a href="#">쇼핑하기</a></li>
+                <li><a href="#">헤이오더</a></li>
+                <li><a href="#">IKEA 모바일 앱</a></li>
+                <li><a href="#">결제옵션</a></li>
+                <li><a href="#">기프트 카드</a></li>
+            </ul>
+        </li>
+        <li><a href="#">서비스</a>
+            <ul class="sub">
+                <li><a href="#">IKEA 서비스</a></li>
+                <li><a href="#">배송 서비스</a></li>
+                <li><a href="#">조립 서비스</a></li>
+                <li><a href="#">그 외 서비스</a></li>
+            </ul>
+        </li>
+        <li><a href="#">IKEA 이야기</a>
+            <ul class="sub">
+                <li><a href="#">브랜드 소개</a></li>
+                <li><a href="#">뉴스룸</a></li>
+                <li><a href="#">채용정보</a></li>
+            </ul>
+        </li>
+    </ul>
+    <ul class="gnb_others">
+        <li><img src="images/truck.png" alt="truck"></li>
+        <li><a href="#">우편번호 입력</a></li>
+        <li><img src="images/marcket.png" alt="marcket"></li>
+        <li><a href="#">매장선택</a></li>
+    </ul>
+</div>
+    <div class="main_wrap">
+        <div class="main_all">
+            <div class="main1 main on">
+                <div class="b_wrap"></div>
+                <div class="main_content">
+                    <h1><P>아늑하고 </P> 
+                        <div class="line"></div>
+                        <p>새로운 침구를 만나보세요</p>
+                    </h1>
+                    <div class="main_btn_box clearFix">
+                        <p class="main_btn">다른 침실 보기</p>
+                        <p class="main_btn">해당 제품 보기</p>
+                    </div>
+                </div>
+            </div>
+            <div class="main2 main">
+                <div class="b_wrap"></div>
+                <div class="main_content">
+                    <h1><P>꿈꿔왔던 나의 주방</P> 
+                        <div class="line"></div>
+                        <p>IKEA와 함께 만들어 보세요</p>
+                    </h1>
+                    <div class="main_btn_box clearFix">
+                        <p class="main_btn">다른 주방 보기</p>
+                        <p class="main_btn">해당 제품 보기</p>
+                    </div>
+                </div>
+        </div>
+        <div class="main3 main">
+            <div class="b_wrap"></div>
+            <div class="main_content">
+                <h1><P>꿈꾸던</P> 
+                    <div class="line"></div>
+                    <p>야외 공간을 찾아보세요</p>
+                </h1>
+                <div class="main_btn_box clearFix">
+                    <p class="main_btn">다른 야외공간 보기</p>
+                    <p class="main_btn">해당 제품 보기</p>
+                </div>
+            </div>
+        </div>
+            <div class="main4 main ">
+                <div class="b_wrap"></div>
+                <div class="main_content">
+                    <h1><P>꿈에 그리던 거실을</P> 
+                        <div class="line"></div>
+                        <p>만나보세요</p>
+                    </h1>
+                    <div class="main_btn_box clearFix">
+                        <p class="main_btn">다른 거실 보기</p>
+                        <p class="main_btn">해당 제품 보기</p>
+                    </div>
+                </div>
+            </div>
+
+    </div>
+    <div class="main_slide">
+        <p class="slide"></p>
+    </div>
+    <img class="prev" src="images/main_prev.png" alt="prev">
+    <img class="next" src="images/main_next.png" alt="next">
+</div>
+    <!-- main -->
+    <img class="btn_top" src="images/btn_top.png" alt="btn_top">
+    <!-- top버튼 -->
+    <div class="new_back">
+        <div class="new clearFix">
+            <div class="new_ran">
+                <div class="new_fix">
+                    <div class="new_txt">
+                        <h4>IKEA</h4>
+                        <h3>New</h3>
+                        <p class="new_line"></p>
+                        <div class="new_all_back">
+                            <div class="new_btn_back">
+                                <a href="#">신제품 보러가기</a><img src="images/more_arrow_right_w.png" alt="new_all">
+                            </div>
+                        </div>
+                        <div class="new_txt_wrap">
+                            <div class="new_txt_po">
+                                <h5 class="new_txt_title">빛을 활용한 공간 인테리어</h5>
+                                <p class="new_txt_txt">창가에서 내리쬐는 빛을 어느 정도 가리고 <br>
+                                    사생활을 보호할 필요가 있는 공간에 이 블라인드를 설치해 보세요.<br>
+                                    밖에서 들어오는 빛을 블라인드에서 걸러주어 실내 공간을<br>
+                                    편안한 분위기로 만들어줍니다.<br>
+                                    <!-- 코드를 없애 아이가 있는 가정에서도 안전하게 사용할 수 있고 완충 기능이 있어 조용합니다.</p> -->
+                                </div>
+                                <div class="new_txt_po">
+                                    <h5 class="new_txt_title">어린 패셔니스타를 위한 공간</h5>
+                                    <p class="new_txt_txt">로프트 침대 아래에는 옷장을 놓을 정도로 충분한 공간이 있어요. <br>
+                                        수면 공간과는 별도로 청소년기인 아이가 열중할 수 있는 공간을 함께 배치할 수 있습니다.</p>
+                                </div>
+                                <div class="new_txt_po">
+                                    <h5 class="new_txt_title">침대를 나만의 조용한 공간으로 만들기</h5>
+                                    <p class="new_txt_txt">이 커튼은 방안에 빛이 퍼질 수 있게 고안되었습니다.<br>
+                                        프라이버시를 유지하면서도 햇볕을 쬘 수 있어 두 이점을 모두 누릴 수 있죠. 커튼 봉이나 커튼레일에 달면 돼요.</p>
+                                </div>
+                                <div class="new_txt_po">
+                                    <h5 class="new_txt_title">어디서나 옷을 말릴 수 있어요</h5>
+                                    <p class="new_txt_txt">접이식 건조대는 경이로운 공간 효율성을 가지고 있어요.<br>
+                                        걸이식 집게와 손잡이 클립이 달린 옷걸이를 추가하면 깔끔하게 정리된 옷을 한꺼번에 가져갈 수 있어요.</p>
+                                </div>
+                                <div class="new_txt_po">
+                                    <h5 class="new_txt_title">집은 인테리어 디자인을 따라야합니다.</h5>
+                                    <p class="new_txt_txt">나만의 개성, 미적 취향, 일상 생활에 어울리는 생활 공간을 꾸미고 꾸밀 수있는 방법은 무엇이든 가능합니다.<br>
+                                        세련된 화이트 톤의이 트랙 레일은 커튼, 홈 텍스타일과 같은 공간의 다른 요소들과 잘 어울립니다. </p>
+                                </div>
+                                <div class="new_txt_po">
+                                    <h5 class="new_txt_title">눈길을 끄는 그래픽 패턴</h5>
+                                    <p class="new_txt_txt">시선을 사로잡는 기하학 패턴 조립마루로 야외 공간의 바닥을 새롭게 꾸며 보세요.<br>
+                                        플라스틱으로 제작된 이 조립마루는 변색되지 않는 내후성 마감으로 오래 사용할 수 있고 내구성이 뛰어나요.</p>
+                                </div>
+                                <div class="new_txt_po">
+                                    <h5 class="new_txt_title">색다른 느낌의 아늑한 다이닝 공간</h5>
+                                    <p class="new_txt_txt">다이닝의 전통은 스스로 만들어가는 거예요. 나에게 가장 잘 맞는다면 의자 대신 벤치와 스툴을 사용해보세요.<br>
+                                        자작나무 테이블과 벤치 세트를 활용하면 더욱 밝고 친근한 느낌을 줄 수 있어요.  </p>
+                                </div>
+                                <div class="new_txt_po">
+                                    <h5 class="new_txt_title">전망 좋은 자리</h5>
+                                    <p class="new_txt_txt">퇴근 후 차를 마시거나 사람들을 구경 할 수있는 창가 자리보다 더 좋은 것은 없습니다. <br>
+                                        이 긴 바 스툴은 완벽한 공간을 만들어 주며, 긴 선반 만 있으면 바를 바깥 세상과 연결할 수 있습니다.</p>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+           </div>
+               <div class="new_ran2">
+                        <div class="new_img_box">
+                                <img class="new_img" src="images/new1.jpg" alt="new1">
+                                <img class="new_img" src="images/new2.jpg" alt="new2">
+                                <img class="new_img" src="images/new3.jpg" alt="new3">
+                                <img class="new_img" src="images/new4.jpg" alt="new4">
+                                <img class="new_img" src="images/new5.jpg" alt="new5">
+                                <img class="new_img" src="images/new6.jpg" alt="new6">
+                                <img class="new_img" src="images/new7.jpg" alt="new7">
+                                <img class="new_img" src="images/new8.jpg" alt="new8">
+                        </div>
+              </div>
+    </div>
+    <!-- new_content -->
+</div>
+    <!-- new&event_back -->
+    <div class="catemore_back">
+        <div class="cate clearFix">
+            <div class="cate_txt">
+                <h1>카테고리</h1>
+                <div class="cate_line"></div>
+                <ul class="cate_tab clearFix">
+                    <li class="on">수납/정리</li>
+                    <li><i class="fa-solid fa-loveseat"></i>침대/매트리스</li>
+                    <li>소파</li>
+                    <li>홈오피스</li>
+                    <li>어린이 IKEA</li>
+                    <li>조명</li>
+                    <li>홈 액세서리</li>
+                </ul>
+            </div>
+            <div class="cate_wrap">
+                <ul class="cate_img on clearFix ">
+                    <li class="cate1_1">
+                        <div class="cate_info_all">
+                            <div class="cate_info_back"></div>
+                            <div class="cate_info">
+                                <h5>TROFAST 트로파스트</h5>
+                                <p>수납콤비네이션+수납함, 34x44x56 cm</p>
+                                <p>￦49,000</p>    
+                            </div>
+                        </div>
+                     </li>
+                    <li class="cate1_2">
+                        <div class="cate_info_all">
+                            <div class="cate_info_back"></div>
+                            <div class="cate_info">
+                                <h5>MILSBO 밀스보</h5>
+                                <p>유리도어수납장, 화이트, 73x175 cm</p>
+                                <p>￦349,000</p>    
+                            </div>
+                        </div>
+                    </li>
+                    <li class="cate1_3">
+                        <div class="cate_info_all">
+                            <div class="cate_info_back"></div>
+                            <div class="cate_info">
+                                <h5>RUDSTA 루스타</h5>
+                                <p>유리도어수납장, 앤트러싸이트, 42x37x155 cm</p>
+                                <p>￦129,000</p>    
+                            </div>
+                        </div>
+                    </li>
+                    <li class="cate1_4">
+                        <div class="cate_info_all">
+                            <div class="cate_info_back"></div>
+                            <div class="cate_info">
+                                <h5>BRIMNES 브림네스</h5>
+                                <p>도어수납장, 유리/화이트, 78x95 cm</p>
+                                <p>￦159,000</p>    
+                            </div>
+                        </div>
+                    </li>
+                    <li class="cate1_5">
+                        <div class="cate_info_all">
+                            <div class="cate_info_back"></div>
+                            <div class="cate_info">
+                                <h5>IDÅSEN 이도센</h5>
+                                <p>미닫이 유리수납장, 베이지, 120x140 cm</p>
+                                <p>￦499,000</p>    
+                            </div>
+                        </div>
+                    </li>
+                    <li class="cate1_6">
+                        <div class="cate_info_all">
+                            <div class="cate_info_back"></div>
+                            <div class="cate_info">
+                                <h5>LOMMARP 롬마르프</h5>
+                                <p>유리도어 수납장, 다크 블루-그린, 86x199 cm</p>
+                                <p>￦599,000</p>    
+                            </div>
+                        </div>
+                    </li>
+                </ul>  
+                <ul class="cate_img clearFix">
+                    <li class="cate2_1">
+                        <div class="cate_info_all">
+                            <div class="cate_info_back"></div>
+                            <div class="cate_info">
+                                <h5>ÅBYGDA 오뷔그다</h5>
+                                <p>폼매트리스, 단단함/화이트, 150x200 cm</p>
+                                <p>￦329,000</p>    
+                            </div>
+                        </div>
+                    </li>
+                    <li class="cate2_2">
+                        <div class="cate_info_all">
+                            <div class="cate_info_back"></div>
+                            <div class="cate_info">
+                                <h5>ÅGOTNES 오고트네스</h5>
+                                <p>폼매트리스, 단단함/라이트블루, 90x200 cm</p>
+                                <p>￦80,000</p>    
+                            </div>
+                        </div>
+                    </li>
+                    <li class="cate2_3">
+                        <div class="cate_info_all">
+                            <div class="cate_info_back"></div>
+                            <div class="cate_info">
+                                <h5>ROSENVIAL 로센비알</h5>
+                                <p>베개보호커버, 50x80 cm</p>
+                                <p>￦22,900</p>    
+                            </div>
+                        </div>
+                    </li>
+                    <li class="cate2_4">
+                        <div class="cate_info_all">
+                            <div class="cate_info_back"></div>
+                            <div class="cate_info">
+                                <h5>TUFJORD 투피오르드</h5>
+                                <p>쿠션형 침대프레임, 180x200 cm</p>
+                                <p>￦849,000</p>    
+                            </div>
+                        </div>
+                    </li>
+                    <li class="cate2_5">
+                        <div class="cate_info_all">
+                            <div class="cate_info_back"></div>
+                            <div class="cate_info">
+                                <h5>NORDLI 노르들리</h5>
+                                <p>수납침대프레임, 화이트, 160x200 cm/p>
+                                <p>￦499,000</p>    
+                            </div>
+                        </div>
+                    </li>
+                    <li class="cate2_6">
+                        <div class="cate_info_all">
+                            <div class="cate_info_back"></div>
+                            <div class="cate_info">
+                                <h5>MALM 말름</h5>
+                                <p>높은침대프레임+수납상자2, 150x200 cm</p>
+                                <p>￦554,000</p>    
+                            </div>
+                        </div>
+                    </li>
+                </ul>  
+                <ul class="cate_img clearFix">
+                    <li class="cate3_1">
+                        <div class="cate_info_all">
+                            <div class="cate_info_back"></div>
+                            <div class="cate_info">
+                                <h5>SÖDERHAMN 쇠데르함</h5>
+                                <p>코너소파4, 오픈엔드/프리드투나 다크그레이</p>
+                                <p>￦1,704,000</p>    
+                            </div>
+                        </div>
+                    </li>
+                    <li class="cate3_2">
+                        <div class="cate_info_all">
+                            <div class="cate_info_back"></div>
+                            <div class="cate_info">
+                                <h5>GRÖNLID 그뢴리드</h5>
+                                <p>2인용소파, 스포르다 내추럴</p>
+                                <p>￦799,000</p>    
+                            </div>
+                        </div>
+                    </li>
+                    <li class="cate3_3">
+                        <div class="cate_info_all">
+                            <div class="cate_info_back"></div>
+                            <div class="cate_info">
+                                <h5>VIMLE 빔레</h5>
+                                <p>3인용소파, 군나레드 베이지</p>
+                                <p>￦899,000</p>    
+                            </div>
+                        </div>
+                    </li>
+                    <li class="cate3_4">
+                        <div class="cate_info_all">
+                            <div class="cate_info_back"></div>
+                            <div class="cate_info">
+                                <h5>KLIPPAN 클리판</h5>
+                                <p>2인용소파, 봄스타드 블랙</p>
+                                <p>￦399,000</p>    
+                            </div>
+                        </div>
+                    </li>
+                    <li class="cate3_5">
+                        <div class="cate_info_all">
+                            <div class="cate_info_back"></div>
+                            <div class="cate_info">
+                                <h5>LANDSKRONA 란스크로나</h5>
+                                <p>4인용소파, 긴의자/그란/봄스타드 </p>
+                                <p>￦1,799,000</p>    
+                            </div>
+                        </div>
+                    </li>
+                    <li class="cate3_6">
+                        <div class="cate_info_all">
+                            <div class="cate_info_back"></div>
+                            <div class="cate_info">
+                                <h5>SMEDSTORP 스메스토르프</h5>
+                                <p>4인용소파+긴 의자, 유파르프/다크그린블루</p>
+                                <p>￦1,599,000</p>    
+                            </div>
+                        </div>
+                    </li>
+                </ul>  
+                <ul class="cate_img clearFix">
+                    <li class="cate4_1">
+                        <div class="cate_info_all">
+                            <div class="cate_info_back"></div>
+                            <div class="cate_info">
+                                <h5>BEKANT 베칸트</h5>
+                                <p>코너책상R, 화이트, 160x110 cm</p>
+                                <p>￦269,000</p>    
+                            </div>
+                        </div>
+                    </li>
+                    <li class="cate4_2">
+                        <div class="cate_info_all">
+                            <div class="cate_info_back"></div>
+                            <div class="cate_info">
+                                <h5>RENBERGET 렌베리에트</h5>
+                                <p>회전의자, 봄스타드 블랙</p>
+                                <p>￦69,900</p>    
+                            </div>
+                        </div>
+                    </li>
+                    <li class="cate4_3">
+                        <div class="cate_info_all">
+                            <div class="cate_info_back"></div>
+                            <div class="cate_info">
+                                <h5>ALEFJÄLL 알레피엘</h5>
+                                <p>사무용의자, 그란 베이지</p>
+                                <p>￦279,000</p>    
+                            </div>
+                        </div>
+                    </li>
+                    <li class="cate4_4">
+                        <div class="cate_info_all">
+                            <div class="cate_info_back"></div>
+                            <div class="cate_info">
+                                <h5>TROTTEN 트로텐</h5>
+                                <p>책상, 화이트, 120x70 cm</p>
+                                <p>￦99,000</p>    
+                            </div>
+                        </div>
+                    </li>
+                    <li class="cate4_5">
+                        <div class="cate_info_all">
+                            <div class="cate_info_back"></div>
+                            <div class="cate_info">
+                                <h5>KALLAX 칼락스 / LAGKAPTEN 락캅텐</h5>
+                                <p>책상콤비네이션, 화이트, 77x159x147 cm</p>
+                                <p>￦178,900</p>    
+                            </div>
+                        </div>
+                    </li>
+                    <li class="cate4_6">
+                        <div class="cate_info_all">
+                            <div class="cate_info_back"></div>
+                            <div class="cate_info">
+                                <h5>IDÅSEN 이도센</h5>
+                                <p>도어수납장+서랍, 다크그린, 80x47x119 cm</p>
+                                <p>￦379,000</p>    
+                            </div>
+                        </div>
+                    </li>
+                </ul>  
+                <ul class="cate_img clearFix">
+                    <li class="cate5_1">
+                        <div class="cate_info_all">
+                            <div class="cate_info_back"></div>
+                            <div class="cate_info">
+                                <h5>GULLIGAST 굴리가스트</h5>
+                                <p>모빌, 멀티컬러</p>
+                                <p>￦9,900</p>    
+                            </div>
+                        </div>
+                    </li>
+                    <li class="cate5_2">
+                        <div class="cate_info_all">
+                            <div class="cate_info_back"></div>
+                            <div class="cate_info">
+                                <h5>BLÅVINGAD 블로빙아드</h5>
+                                <p>이불커버+베개커버, 150x200/50x80 cm</p>
+                                <p>￦39,900</p>    
+                            </div>
+                        </div>
+                    </li>
+                    <li class="cate5_3">
+                        <div class="cate_info_all">
+                            <div class="cate_info_back"></div>
+                            <div class="cate_info">
+                                <h5>MÅLA 몰라</h5>
+                                <p>이젤, 소프트우드</p>
+                                <p>￦29,900</p>    
+                            </div>
+                        </div>
+                    </li>
+                    <li class="cate5_4">
+                        <div class="cate_info_all">
+                            <div class="cate_info_back"></div>
+                            <div class="cate_info">
+                                <h5>UNDERHÅLLA 운데르홀라</h5>
+                                <p>교육용 목재시계, 멀티컬러, 25 cm</p>
+                                <p>￦12,900</p>    
+                            </div>
+                        </div>
+                    </li>
+                    <li class="cate5_5">
+                        <div class="cate_info_all">
+                            <div class="cate_info_back"></div>
+                            <div class="cate_info">
+                                <h5>BÖNSYRSA 뵌쉬르사</h5>
+                                <p>책상패드, 동물 패턴, 60x37 cm</p>
+                                <p>￦7,900</p>    
+                            </div>
+                        </div>
+                    </li>
+                    <li class="cate5_6">
+                        <div class="cate_info_all">
+                            <div class="cate_info_back"></div>
+                            <div class="cate_info">
+                                <h5>KURA 쿠라</h5>
+                                <p>침대커튼, 시장 가판대 패턴</p>
+                                <p>￦24,900</p>    
+                            </div>
+                        </div>
+                    </li>
+                </ul>  
+                <ul class="cate_img clearFix">
+                    <li class="cate6_1">
+                        <div class="cate_info_all">
+                            <div class="cate_info_back"></div>
+                            <div class="cate_info">
+                                <h5>FADO 파도</h5>
+                                <p>탁상스탠드, 화이트, 25 cm</p>
+                                <p>￦24,900</p>    
+                            </div>
+                        </div>
+                    </li>
+                    <li class="cate6_2">
+                        <div class="cate_info_all">
+                            <div class="cate_info_back"></div>
+                            <div class="cate_info">
+                                <h5>MARKFROST 마르크프로스트</h5>
+                                <p>탁상스탠드, 대리석 블랙</p>
+                                <p>￦25,000</p>    
+                            </div>
+                        </div>
+                    </li>
+                    <li class="cate6_3">
+                        <div class="cate_info_all">
+                            <div class="cate_info_back"></div>
+                            <div class="cate_info">
+                                <h5>STÖTTA 스퇴타</h5>
+                                <p>LED집게형스폿조명, 배터리식 화이트</p>
+                                <p>￦9,900</p>    
+                            </div>
+                        </div>
+                    </li>
+                    <li class="cate6_4">
+                        <div class="cate_info_all">
+                            <div class="cate_info_back"></div>
+                            <div class="cate_info">
+                                <h5>IRSTA 이르스타</h5>
+                                <p>LED조리대 조명, 오팔 화이트, 80 cm</p>
+                                <p>￦99,900</p>    
+                            </div>
+                        </div>
+                    </li>
+                    <li class="cate6_5">
+                        <div class="cate_info_all">
+                            <div class="cate_info_back"></div>
+                            <div class="cate_info">
+                                <h5>GODMORGON 고드모르곤</h5>
+                                <p>LED수납장/벽부착등, 화이트, 80 cm</p>
+                                <p>￦79,900</p>    
+                            </div>
+                        </div>
+                    </li>
+                    <li class="cate6_6">
+                        <div class="cate_info_all">
+                            <div class="cate_info_back"></div>
+                            <div class="cate_info">
+                                <h5>FORSÅ 포르소</h5>
+                                <p>독서등, 니켈 도금</p>
+                                <p>￦29,900</p>    
+                            </div>
+                        </div>
+                    </li>
+                </ul>  
+                <ul class="cate_img clearFix">
+                    <li class="cate7_1">
+                        <div class="cate_info_all">
+                            <div class="cate_info_back"></div>
+                            <div class="cate_info">
+                                <h5>HOLMVI 홀름비</h5>
+                                <p>담요/스로우, 라이트그레이-그린, 120x160 cm</p>
+                                <p>￦7,900</p>    
+                            </div>
+                        </div>
+                    </li>
+                    <li class="cate7_2">
+                        <div class="cate_info_all">
+                            <div class="cate_info_back"></div>
+                            <div class="cate_info">
+                                <h5>JUBLA 유블라</h5>
+                                <p>샹들리에양초, 화이트, 19 cm</p>
+                                <p>￦9,900/20 개</p>    
+                            </div>
+                        </div>
+                    </li>
+                    <li class="cate7_3">
+                        <div class="cate_info_all">
+                            <div class="cate_info_back"></div>
+                            <div class="cate_info">
+                                <h5>DAGKLAR 닥클라르</h5>
+                                <p>병+인서트, 유리/스테인리스, 0.4 l</p>
+                                <p>￦4,900</p>    
+                            </div>
+                        </div>
+                    </li>
+                    <li class="cate7_4">
+                        <div class="cate_info_all">
+                            <div class="cate_info_back"></div>
+                            <div class="cate_info">
+                                <h5>FLADDRIG 플라드리그</h5>
+                                <p>도시락 가방, 패턴 그레이, 25x16x27 cm</p>
+                                <p>￦1,000</p>    
+                            </div>
+                        </div>
+                    </li>
+                    <li class="cate7_5">
+                        <div class="cate_info_all">
+                            <div class="cate_info_back"></div>
+                            <div class="cate_info">
+                                <h5>BARNASINNE 바르나신네</h5>
+                                <p>향신료분쇄기, 블랙/화이트, 14 cm</p>
+                                <p>￦5,000/2 개</p>    
+                            </div>
+                        </div>
+                    </li>
+                    <li class="cate7_6">
+                        <div class="cate_info_all">
+                            <div class="cate_info_back"></div>
+                            <div class="cate_info">
+                                <h5>FULLÄNDAD 풀렌다드</h5>
+                                <p>조리도구5종, 그레이</p>
+                                <p>￦6,900</p>    
+                            </div>
+                        </div>
+                    </li>
+                </ul>  
+            </div>
+        
+        <img class="prev" src="images/main_prev_b.png" alt="prev">
+        <img class="next" src="images/main_next_b.png" alt="next">
+            <div class="cate_all" ><img src="images/more_arrow_right.png" alt="cate_more"></div>
+    </div>
+
+    <div class="more_back">
+            <div class="more clearFix">
+                <div class="focus">
+                    <h3 class="more_title">놓치기 아쉬운<br>
+                        추천상품</h3>
+                        <p class="line"></p>
+                    <p class="more_txt">
+                        최근에 본 상품과 <br> 유사한 상품들을 <br> 구경해보세요 
+                    </p>
+                    <p class="more_btn">더보기</p>
+                    <div class="more_slide clearFix">
+                        <div class="left"><img src="images/more_arrow_left.png" alt="arrow_left"></div>
+                        <div class="right"><img src="images/more_arrow_right.png" alt="arrow_right"></div>
+                    </div>
+                </div>
+            <div class="more_view">
+                <ul class="more_img clearFix">
+                    <li><img class="before" src="images/more1_b.jpg" alt="more_b"><img class="after" src="images/more1_a.jpg" alt="more_a"></li>
+                    <li><img class="before" src="images/more2_b.jpg" alt="more_b"><img class="after" src="images/more2_a.jpg" alt="more_a"></li>
+                    <li><img class="before" src="images/more3_b.jpg" alt="more_b"><img class="after" src="images/more3_a.jpg" alt="more_a"></li>
+                    <li><img class="before" src="images/more4_b.jpg" alt="more_b"><img class="after" src="images/more4_a.jpg" alt="more_a"></li>
+                    <li><img class="before" src="images/more5_b.jpg" alt="more_b"><img class="after" src="images/more5_a.jpg" alt="more_a"></li>
+                    <li><img class="before" src="images/more6_b.jpg" alt="more_b"><img class="after" src="images/more6_a.jpg" alt="more_a"></li>
+                    <li><img class="before" src="images/more7_b.jpg" alt="more_b"><img class="after" src="images/more7_a.jpg" alt="more_a"></li>
+                    <li><img class="before" src="images/more8_b.jpg" alt="more_b"><img class="after" src="images/more8_a.jpg" alt="more_a"></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+  </div>
+    <!-- category & more -->
+    <div class="family">
+        <div class="family_view clearFix">
+            <div class="family_img"><img src="images/family.jpg" alt="family"></div>
+            <div class="family_cont">
+                <h3>IKEA Family </h3>
+                <div class="line"></div>
+                <p>IKEA Family에 무료로 가입하고 다음의 혜택을 누려보세요</p>
+                <ul>
+                    <li><a href="#">IKEA Family 특별가</a></li>
+                    <li><a href="#">생일 축하 쿠폰</a></li>
+                    <li><a href="#">무료 커피</a></li>
+                    <li><a href="#">14일 이내 무료 교환/환불</a></li>
+                    <li><a href="#">전문가 플래닝 서비스 1시간 무료</a></li>
+                    <li><a href="#">IKEA Family 워크숍</a></li>
+                    <li><a href="#">스폐셜 이사 쿠폰</a></li>
+                </ul>
+                <div class="family_btn"><img src="images/more_arrow_right.png" alt="family_more"></div>
+            </div>
+        </div>
+    </div>
+    <div class="busin">
+        <div class="busin_view clearFix">
+            <div class="busin_cont">
+                <h3>IKEA Business </h3>
+                <div class="line"></div>
+                <p>IKEA Family에 무료로 가입하고 다음의 혜택을 누려보세요</p>
+                <ul>
+                    <li><a href="#">비즈니스 구매 상담 1시간 무료</a></li>
+                    <li><a href="#">비즈니스 인테리어 디자인 서비스 특별가</a></li>
+                    <li><a href="#">멤버 임직원을 위한 혜택</a></li>
+                    <li><a href="#">IKEA와 함께 배워보기</a></li>
+                    <li><a href="#">멤버를 위한 특별가</a></li>
+                    <li><a href="#">IKEA Family 워크숍</a></li>
+                    <li><a href="#">평일 무료커피</a></li>
+                </ul>
+                <div class="busin_btn"><img src="images/more_arrow_right.png" alt="busin_more"></div>
+            </div>
+            <div class="busin_img"><img src="images/business.jpg" alt="business"></div>
+        </div>
+    </div>
+    <div class="service_back">
+        <div class="service_txt">
+            <h1>IKEA</h1>
+            <h3>Service</h3>
+            <div class="service_line"></div>
+        </div>
+        <ul class="service clearFix">
+            <li><div class="h_back"></div><div class="h_it"><img src="images/service1_png.png" alt="service1"><p>설치 서비스</p></div></li>
+            <li><div class="h_back"></div><div class="h_it"><img src="images/service2_png.png" alt="service2"><p>조립 서비스</p></div></li>
+            <li><div class="h_back"></div><div class="h_it"><img src="images/service3_png.png" alt="service3"><p>주방 서비스</p></div></li>
+            <li><div class="h_back"></div><div class="h_it"><img src="images/service4_png.png" alt="service4"><p>배송 서비스</p></div></li>
+            <li><div class="h_back"></div><div class="h_it"><img src="images/service5_png.png" alt="service5"><p>주유소 픽업 서비스</p></div></li>
+        </ul>
+        <div class="service_all clearFix">
+            <p>모든 서비스 보기</p>
+                <img class="service_arrow" src="images/more_arrow_right.png" alt="all_service">
+        </div>
+        <!-- service_content -->
+    </div>
+    <!-- serviece-background -->
+</section>
+<footer>
+    <div class="foot_cont_all clearFix">
+        <div class="foot_cont_left">
+            <p class="title">IKEA FAMILY</p>
+            <p class="txt">지금 IKEA Family에 무료로 가입하고<br>
+                다양한 멤버 전용 혜택을 누리세요.
+            </p>
+            <div class="btn clearFix">
+                <a href="#">자세히 보기</a>
+                <a href="#">가입하기</a>
+            </div>
+            <p class="title">IKEA Businness Netowrk</p>
+            <p class="txt">여러분의 더 나은 비즈니스 환경을 위한<br>
+                 다양한 혜택들은 받으세요
+            </p>
+            <div class="btn clearFix">
+                <a href="#">자세히 보기</a>
+                <a href="#">가입하기</a>
+            </div>
+            <div class="sns">
+                <img src="images/facebook.png" alt="facebook">
+                <img src="images/youtube.png" alt="youtube">
+                <img src="images/instargram.png" alt="instargram">
+                <img src="images/kakaotalk.png" alt="kakaotalk">
+            </div>
+        </div>
+        <ul class="foot_cont_center clearFix">
+            <li><a href="#">제품</a>
+                <ul class="sub">
+                    <li><a href="#">모든 제품</a></li>
+                    <li><a href="#">온라인 쇼룸</a></li>
+                    <li><a href="#">홈 액세서리</a></li>
+                </ul>
+            </li>
+            <li><a href="#">고객문의</a>
+                <ul class="sub">
+                    <li><a href="#">고객지원</a></li>
+                    <li><a href="#">자주묻는 질문</a></li>
+                    <li><a href="#">문의하기</a></li>
+                    <li><a href="#">배송조회</a></li>
+                    <li><a href="#">교환환불</a></li>
+                    <li><a href="#">품질보증</a></li>
+                    <li><a href="#">제품리콜</a></li>
+                    <li><a href="#">피드백</a></li>
+                    <li><a href="#">부품신청</a></li>
+                </ul>
+            </li>
+            <li><a href="#">쇼핑하기</a>
+                <ul class="sub">
+                    <li><a href="#">쇼핑하기</a></li>
+                    <li><a href="#">헤이오더</a></li>
+                    <li><a href="#">IKEA 모바일 앱</a></li>
+                    <li><a href="#">결제옵션</a></li>
+                    <li><a href="#">기프트 카드</a></li>
+                </ul>
+            </li>
+            <li><a href="#">서비스</a>
+                <ul class="sub">
+                    <li><a href="#">IKEA 서비스</a></li>
+                    <li><a href="#">배송 서비스</a></li>
+                    <li><a href="#">조립 서비스</a></li>
+                    <li><a href="#">그 외 서비스</a></li>
+                </ul>
+            </li>
+            <li><a href="#">IKEA 이야기</a>
+                <ul class="sub">
+                    <li><a href="#">브랜드 소개</a></li>
+                    <li><a href="#">뉴스룸</a></li>
+                    <li><a href="#">채용정보</a></li>
+                </ul>
+            </li>
+        </ul>
+        <div class="foot_cont_right">
+            <p>ⓒ Inter IKEA System B.V 1999-2022</p>
+            <p>IKEA KOREA<br>
+                주소: (우)14352 경기도 광명시 일직로 17 IKEA 광명점<br>
+                사업자 등록번호: 106-86-82871 사업자정보확인<br>
+                대표자: 프레드릭 요한손<br>
+                통신판매업 신고: 2018-경기광명-0209<br>
+                TEL: 1670-4532
+            </p>
+            <a href="#">한국어&nbsp;&nbsp;<span>▲</span></a>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
+<!-- 좌측 바클릭시 모달창 생성 우측 바클릭시 이벤트생성 -->
