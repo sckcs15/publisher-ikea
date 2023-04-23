@@ -13,14 +13,4 @@
 
 ## Preview
 
-<<<<<<< HEAD
-<img src="./readme-img/ikea-img1.png"/>
-<img src="./readme-img/ikea-img2.png"/>
-<img src="./readme-img/ikea-img3.png"/>
-<img src="./readme-img/ikea-img4.png"/>
-<img src="./readme-img/ikea-img5.png"/>
-<img src="./readme-img/ikea-img6.png"/>
-<img src="./readme-img/ikea-img7.png"/>
-=======
 <img src="./readme-img/ikea-img1.png"/><img src="./readme-img/ikea-img2.png"/><img src="./readme-img/ikea-img3.png"/><img src="./readme-img/ikea-img4.png"/><img src="./readme-img/ikea-img5.png"/><img src="./readme-img/ikea-img6.png"/><img src="./readme-img/ikea-img7.png"/>
->>>>>>> main
